@@ -49,3 +49,33 @@ selected location
 For each reminder, create a geofencing request in the background that fires up a notification when the user enters the geofencing area.
 Display details about a reminder when a selected POI is reached and the user clicked on the notification.
 When the user clicks a notification, a new screen appears to display the reminder details.
+## Testing
+# Use MVVM and Dependency Injection
+Use MVVM and Dependency Injection to architect your app.
+The app should follow the MVVM design pattern and uses ViewModels to hold the live data objects, do the validation and interact with the data sources.
+Make sure that the validation and data interactions aren’t made through the Fragments or Activities but through the ViewModel.
+Retrieve the ViewModels and DataSources using Koin.
+# Test the ViewModels, Coroutines, and LiveData
+Provide testing for the ViewModels, Coroutines and LiveData objects.
+RemindersListViewModelTest or SaveReminderViewModelTest should be present in the test package that tests the functions inside the view model.
+Live data objects should be tested using shouldReturnError and check_loading testing functions.
+Testing methods names should follow the naming convention for testing.
+Tip: Run the test coverage to check how much code is tested in the app.
+
+# FakeDataSource
+Create a FakeDataSource to replace the Data Layer and test the app in isolation.
+Project repo should contain a FakeDataSource class that acts as a test double for the LocalDataSource.
+Ensure that error handling is done at this class to simulate a failure scenario.
+# Test Framework
+Use Espresso and Mockito to test the app UI (each screen of the app) and Fragments Navigation. Testing should follow the “Given, When, Then” pattern. Test method names should include the action and expected result of the test. Use Before and After correctly to initialize the testing and clean up after finishing the test. Tests should include:
+Automation Testing using ViewMatchers and ViewInteractions to simulate user interactions with the app.
+Testing for Snackbar and Toast messages.
+Testing the fragments’ navigation.
+The testing classes present at androidTest package.
+# Test DAO (Data Access Object) and Repository classes.
+Testing should use Room.inMemoryDatabaseBuilder to create a Room DB instance.
+Testing should cover:
+inserting and retrieving data using DAO.
+predictable errors messages like data not found.
+Make sure that wrapEspressoIdlingResource is used to wrap the heavy and background tasks.
+Don't forget to close the DB at the @after method.
