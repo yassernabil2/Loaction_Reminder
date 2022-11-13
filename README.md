@@ -28,3 +28,24 @@ Update the Map Styling using the map styling wizard to generate a nice looking m
 -Users should have the option to change map type from the toolbar items.
 ## -Geofencing:
 When the user enters a geofence, a reminder is retrieved from the local storage and a notification showing the reminder title will appear, even if the app is not open.
+# Reminders
+## Create Reminders:
+Create a screen to add a new reminder when a user reaches the selected location.
+Each new reminder should include
+title
+description
+selected location
+Important: Capture the user-entered data using live data and data binding.
+Use RemindersLocalRepository to save the reminder to the local DB, and create the geofencing request after confirmation.
+Reminder data should be saved to local storage.
+## Reminders list view:
+Create a screen that displays the reminders retrieved from local storage. If there are no reminders, display a "No Data" indicator. If there are any errors, display an error message.
+User should be able to navigate from the Reminders list view screen to another screen to create a new reminder.
+Each reminder should include
+title
+description
+selected location
+## Reminder notification:
+For each reminder, create a geofencing request in the background that fires up a notification when the user enters the geofencing area.
+Display details about a reminder when a selected POI is reached and the user clicked on the notification.
+When the user clicks a notification, a new screen appears to display the reminder details.
