@@ -78,6 +78,6 @@ class RemindersListViewModelTest {
         remindersListViewModel.loadReminders()
 
         //THEN - It is an error, there is a snackbar
-        assertThat(remindersListViewModel.showSnackBar.getOrAwaitValue(), not(nullValue()))
+        assertThat(remindersListViewModel.showSnackBar.value, CoreMatchers.`is`("Reminders can't be retrieved"))
     }
 }
