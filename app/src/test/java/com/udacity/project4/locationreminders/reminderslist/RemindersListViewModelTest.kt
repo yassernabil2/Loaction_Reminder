@@ -10,6 +10,7 @@ import com.udacity.project4.locationreminders.getOrAwaitValue
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.pauseDispatcher
 import kotlinx.coroutines.test.resumeDispatcher
+import org.hamcrest.CoreMatchers
 import org.hamcrest.CoreMatchers.nullValue
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.core.Is.`is`
@@ -78,6 +79,6 @@ class RemindersListViewModelTest {
         remindersListViewModel.loadReminders()
 
         //THEN - It is an error, there is a snackbar
-        assertThat(remindersListViewModel.showSnackBar.getOrAwaitValue(), not(nullValue()))
+        assertThat(remindersListViewModel.showSnackBar.value, CoreMatchers.`is`("Reminders can't be retrieved"))
     }
 }
