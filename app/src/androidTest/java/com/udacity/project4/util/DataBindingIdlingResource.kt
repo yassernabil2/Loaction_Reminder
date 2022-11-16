@@ -24,7 +24,6 @@ import androidx.fragment.app.testing.FragmentScenario
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.IdlingResource
 import java.util.UUID
-
 /**
  * An espresso idling resource implementation that reports idle status for all data binding
  * layouts. Data Binding uses a mechanism to post messages which Espresso doesn't track yet.

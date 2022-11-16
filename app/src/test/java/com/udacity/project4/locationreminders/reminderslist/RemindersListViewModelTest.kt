@@ -11,10 +11,8 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.pauseDispatcher
 import kotlinx.coroutines.test.resumeDispatcher
 import org.hamcrest.CoreMatchers
-import org.hamcrest.CoreMatchers.nullValue
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.core.Is.`is`
-import org.hamcrest.core.IsNot.not
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

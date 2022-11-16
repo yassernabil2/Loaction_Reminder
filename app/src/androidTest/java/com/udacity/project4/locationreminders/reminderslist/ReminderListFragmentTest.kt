@@ -40,7 +40,6 @@ import org.mockito.Mockito.verify
 //UI Testing
 @MediumTest
 class ReminderListFragmentTest : AutoCloseKoinTest() {
-
     //COMPLETE: test the navigation of the fragments.
     //COMPLETE: test the displayed data on the UI.
     //COMPLETE: add testing for the error messages.

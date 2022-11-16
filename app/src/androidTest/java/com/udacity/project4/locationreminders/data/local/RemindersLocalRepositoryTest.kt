@@ -20,7 +20,6 @@ import org.junit.runner.RunWith
 //Medium Test to test the repository
 @MediumTest
 class RemindersLocalRepositoryTest {
-
     //DONE: Add testing implementation to the RemindersLocalRepository.kt
 
     @get:Rule

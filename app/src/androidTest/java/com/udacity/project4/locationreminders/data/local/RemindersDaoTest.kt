@@ -24,7 +24,6 @@ import java.util.*
 //Unit test the DAO
 @SmallTest
 class RemindersDaoTest {
-
     // COMPLETE: Add testing implementation to the RemindersDao.kt
 
     //Executes each task synchronously using Architecture Components.
