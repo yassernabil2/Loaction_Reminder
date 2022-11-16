@@ -24,7 +24,6 @@ class ReminderDescriptionActivity : AppCompatActivity() {
             return intent
         }
     }
-
     private lateinit var binding: ActivityReminderDescriptionBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

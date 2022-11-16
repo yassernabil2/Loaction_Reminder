@@ -21,7 +21,6 @@ class GeofenceBroadcastReceiver : BroadcastReceiver() {
             GeofenceTransitionsJobIntentService.enqueueWork(context, intent)
         }
     }
-
     companion object {
         internal const val ACTION_GEOFENCE_EVENT =
             "GeofenceBroadcastReceiver.project4.action.ACTION_GEOFENCE_EVENT"

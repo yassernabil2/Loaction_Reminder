@@ -291,7 +291,6 @@ class SaveReminderFragment : BaseFragment() {
                 .setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER)
                 .build()
         }
-
         geofencingClient.addGeofences(geofenceRequest!!, geofencePendingIntent).run {
             addOnSuccessListener {
                 Toast.makeText(
@@ -310,7 +309,6 @@ class SaveReminderFragment : BaseFragment() {
         }
     }
 }
-
 private const val LOCATION_PERMISSION_INDEX = 0
 private const val REQUEST_FOREGROUND_AND_BACKGROUND_PERMISSION_RESULT_CODE = 33
 private const val BACKGROUND_LOCATION_PERMISSION_INDEX = 1
