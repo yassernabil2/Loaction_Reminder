@@ -57,7 +57,6 @@ class SelectLocationFragment : BaseFragment(), OnMapReadyCallback {
         }
         return binding.root
     }
-
     @RequiresApi(Build.VERSION_CODES.Q)
     override fun onMapReady(googleMap: GoogleMap) {
         map = googleMap

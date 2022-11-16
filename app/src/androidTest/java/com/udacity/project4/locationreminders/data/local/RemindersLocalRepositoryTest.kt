@@ -75,7 +75,6 @@ class RemindersLocalRepositoryTest {
             fakeRemindersDao, Dispatchers.Unconfined
         )
     }
-
     @Test
     fun savesToLocalCache() = runBlockingTest {
         var list = mutableListOf<ReminderDTO>()
