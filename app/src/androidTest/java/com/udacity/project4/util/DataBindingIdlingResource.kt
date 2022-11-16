@@ -69,7 +69,6 @@ class DataBindingIdlingResource : IdlingResource {
     override fun registerIdleTransitionCallback(callback: IdlingResource.ResourceCallback) {
         idlingCallbacks.add(callback)
     }
-
     /**
      * Find all binding classes in all currently available fragments.
      */

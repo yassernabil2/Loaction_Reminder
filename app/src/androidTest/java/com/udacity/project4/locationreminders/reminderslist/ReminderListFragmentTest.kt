@@ -83,7 +83,6 @@ class ReminderListFragmentTest : AutoCloseKoinTest() {
             androidContext(appContext)
             modules(listOf(myModule))
         }
-
         remindersRepository = get()
 
         runBlocking {

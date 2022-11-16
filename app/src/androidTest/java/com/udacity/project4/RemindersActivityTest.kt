@@ -78,7 +78,6 @@ class RemindersActivityTest : AutoCloseKoinTest() {
             repository.deleteAllReminders()
         }
     }
-
     @Before
     fun registerIdlingResource() {
         IdlingRegistry.getInstance().register(dataBindingIdlingResource)

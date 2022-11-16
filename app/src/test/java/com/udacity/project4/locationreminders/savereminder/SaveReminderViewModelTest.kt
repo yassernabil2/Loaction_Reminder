@@ -21,7 +21,6 @@ import org.robolectric.annotation.Config
 @ExperimentalCoroutinesApi
 @RunWith(AndroidJUnit4::class)
 class SaveReminderViewModelTest {
-
     //COMPLETE: Provide testing to the SaveReminderView and its live data objects
 
     //Executes each task synchronously using Architecture Components.

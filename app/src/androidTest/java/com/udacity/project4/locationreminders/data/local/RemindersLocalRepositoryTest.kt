@@ -59,7 +59,6 @@ class RemindersLocalRepositoryTest {
             (-360..360).random().toDouble()
         )
     )
-
     private val reminder1 = list[0]
     private val reminder2 = list[1]
     private val reminder3 = list[2]

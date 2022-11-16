@@ -105,7 +105,6 @@ class RemindersDaoTest {
         //THEN - The loaded data should be null.
         assertNull(loaded)
     }
-
     @Test
     fun deleteReminders() = runBlockingTest {
         //GIVEN - Many reminders are added
